@@ -1,0 +1,178 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --x10: 10px;
+    --x20: 20px;
+    --white:#ffffff ;
+    --blue: #050a30;
+    --black: #000000;
+    --gray: #DCDCDC;
+    --yellow: #FFD700;
+}
+.darkMode{
+    --white:#ffffff ;
+    --blue: #FFD700;
+    --black: #ffffff;
+    --gray: #DCDCDC;
+    --yellow:#050a30;
+}
+.col70{
+    width: 70%;
+}
+
+body{
+    background: var(--blue);
+    background-repeat: none;
+}
+
+main{
+    height: 500px;
+    margin: 4% auto;
+    position: relative;
+    top: 40%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    height: 400px;
+}
+main section{
+    width: 50%;
+}
+#signUp form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+#signIn form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    transform: translateX(-400%);
+    transition: transform 0.6s ease-in-out;
+}
+
+#signIn, #signUp{
+    display: flex;
+} 
+form h1{
+    text-align: center;
+    font-size: 30px;
+}
+form p{
+    color: #cccccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+form p:hover, form a:hover{
+    color: var(--blue) !important;
+}
+.social-icons{
+    text-align: center;
+    margin: 20px;
+}
+.social-icons a{
+    margin: 5px;
+    padding: 10px;
+    border: 1.5px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--blue);
+}
+form input{
+    background-color: var(--gray);
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+form button, .cover button{
+    padding: 10px;
+    width: 40%;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+form>a{
+    text-decoration: none;
+    color: #cccccc;
+    padding: 10px 0;
+}
+
+.cover{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background-color: var(--yellow);
+    bottom: 0;
+    text-align: center;
+    border-radius: 150px 20px 20px 150px;
+    z-index: 999;
+    transition: transform 0.6s ease-in-out;
+}
+.cover h1{
+    padding: 20px;
+    margin-top: 40%;
+    font-size: 45px;
+    color: var(--white);
+    text-align: left;
+    margin: 100px auto 20px auto;
+}   
+.cover button{
+    font-weight: bold;
+    width: 40%;
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.cover p{
+color: var(--black);
+}
+
+.t2{
+    left: 0;
+    border-radius: 20px 150px 150px 20px;
+    transform: translateX(-200%);
+    transition: 0.5 ease-in-out;
+}
+#switch{
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    border: 1px solid transparent;
+}
+#switch>i{
+    font-size: 30px;
+    padding: 12px 20px 30px 20px;
+}
+
+#switch>i:last-child{
+    display: none;
+}
+.darkMode #switch>i:first-child{
+    display: none;
+}
+.darkMode #switch>i:last-child{
+    display: block;
+}

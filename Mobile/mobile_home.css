@@ -1,0 +1,147 @@
+
+.flex{
+    flex-direction: column;
+    align-items: initial;
+}
+.haveSub{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.news{
+    background-color: transparent;
+    border-radius: 0;
+    border: transparent;
+}
+#user{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.submenu, #last{
+    position: relative;
+    background-color: #7f7f7f;
+}
+.submenu a, #last a{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    padding: 10px 20px;
+}
+
+.submenu>li:first-child a, #last>li:first-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu>li:last-child a, #last>li:last-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu::after{
+    display: none;
+}
+.submenu, #last{
+    background-color: transparent;
+}
+.submenu>li:hover a, #last>li:hover>a{
+    color: black !important;
+}
+
+#last{
+    left: 0;
+}
+
+.fa-bars{
+    display: block !important;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#topMenu{
+    justify-content: flex-start;
+    flex-direction: row;
+    position: fixed;
+}
+a.khampha{
+    display: none;
+}
+#topMenu>div>div:first-child{
+    flex-direction: row-reverse;
+    background: #000000 !important;
+    width: 100%;
+}
+#topMenu>div{
+    background: transparent;
+}
+
+.news{
+    margin-right: 0;
+    padding: 0;
+}
+.Menu{
+    background-color: gray;
+    width: 50%;
+    box-shadow: 2px 3px 5px black;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+
+#last>li:nth-child(2){
+    border-bottom: 1.5px solid transparent;
+}
+
+/* --bestseller */
+.bestProduct{
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* dự kiến ra mắt */
+.mainImg{
+    width: 100%;
+    border: 1px solid transparent;
+}
+.mainImg>h3, .mainImg>h4{
+    margin: 20px;
+}
+.subImgs{
+    width: 100%;
+}
+.subImg{
+    flex-direction: row;
+}
+/* --tiện ích-- */
+.tienIchChild>div{
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid grey;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+.fa-car-side, .fa-hand-holding-dollar, .fa-headphones{
+    margin-left: 30px ;
+}
+
+/* ---phobien--- */
+.phoBienChild1>div{
+    display: none;
+    border-right: 1px solid transparent;
+}
+.fa-magnifying-glass{
+    margin: 10px;
+}
+.phoBienChild1, .phoBienChild2{
+    width: 100%;
+}
+.phoBienChild1>p:nth-child(2){
+    flex-direction: row;
+    width: 90%;
+}
+/*______________________________footer_______________________________*/
+
+footer .connect .linked{
+    padding:0.5rem;
+    font-size: 15px;
+}
+footer .info{
+    margin-top: 10%;
+    margin-left: 2%;
+}

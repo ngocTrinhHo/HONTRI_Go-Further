@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONTRI - Go further</title>
+    <link rel="shortcut icon" href="../image/logo_Header.png"/>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../Mobile/mobile_home.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../JS/home.js"></script>
+</head>
+<body onload="init()">
+    <div class="hotline">
+        <div class="phone"><i class="fa-solid fa-phone-volume" style="color: #efc21f;"></i></div>
+        <div>
+            <p>Hotline:</p>
+            <p>0938.906.725</p>
+        </div>
+    </div>
+    <div class="top_button">
+        <button id="top_button"><i class="fa-regular fa-circle-down fa-rotate-180" ></i></button>
+    </div>
+    <header>
+        <div class="video">
+            <video width="100%" autoplay loop muted>
+                <source src="./video/HONTRI_videoMoDau.mp4">
+            </video>
+            <div class="flex">
+                <a href="#" class="khampha notSp"><span>TÌM HIỂU THÊM</span></a>
+                <a href="./HTML/tryDriving.html" class="khampha"><span>ĐĂNG KÍ LÁI THỬ</span></a>
+            </div>
+        </div>
+
+        <div id="topMenu" class="flex">
+            <div class="flex" style="width: 100%;">
+                <div class="flex col30">
+                    <a href="/index.html"><img class="logoHeader" src="./image/logo_Header.png" alt="logo"></a>
+                    <i class="fa-solid fa-bars" id="fal"></i>
+                </div>
+                <ul class="flex Menu">
+                    <div class="flex">
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="./HTML/buy.html">Mua xe</a>
+                                <ul class="submenu">
+                                    <li><a href="./HTML/buy.html">Xe mới</a></li>
+                                    <li><a class="notSp" href="#">Xe cũ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./HTML/buy.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+
+                        <div class="flex haveSub">
+                            <li><a href="./HTML/sell.html">Bán xe</a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="./HTML/tryDriving.html">Tiện ích</a>
+                                <ul class="submenu">
+                                    <li><a href="./HTML/tryDriving.html">Đăng kí lái thử</a></li>
+                                    <li><a class="notSp" href="#">Dự đoán giá lăn bánh</a></li>
+                                    <li><a class="notSp" href="#">So sánh xe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./HTML/tryDriving.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li><a class="notSp" href="#">Tin tức</a></li>
+                        </div>                           
+                        <div class="flex haveSub"><li><a class="notSp" class="news" href="#">Đăng tin</a></li></div>
+                        <div class="flex haveSub" id="user">
+                            <li><a href="./HTML/signIn_Up.html" class="fa-solid fa-circle-user"></a></li>
+                            <li>
+                                <a href="./HTML/signIn_Up.html">Tài khoản</a>
+                                <ul id="last">
+                                    <li><a href="./HTML/signIn_Up.html">Đăng nhập</a></li>
+                                    <li><a href="./HTML/signIn_Up.html">Đăng kí</a></li>
+                                    <li><a class="notSp" href="#">Góp ý</a></li>
+                                    <li><a class="notSp" href="#">Hỗ trợ</a></li>
+                                    <li><a class="notSp" href="#">Liên hệ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="ani" id="bestSeller">
+            <h1>Best Seller</h1>
+            <div class="bestProducts flex">
+                <div class="bestProduct col20">
+                    <img src="./image/G63.webp" alt="G63">
+                    <h4>Mercedes G63 AMG</h4>
+                    <p><i class="fa-solid fa-dollar-sign"></i> 4.350.000.000 VNĐ</p>
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <a class="notSp" href="#">ORDER NOW</a>
+                </div>
+                <div class="bestProduct col20">
+                    <img src="./image/huyndai.png" alt="audi">
+                    <h4>Audi Q5 Black Edition</h4>
+                    <p><i class="fa-solid fa-dollar-sign"></i> 2.099.000.000 VNĐ</p>
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <a class="notSp" href="#">ORDER NOW</a>
+                </div>
+                <div class="bestProduct col20">
+                    <img src="./image/Mercedes.webp" alt="mec">
+                    <h4>Mercedes E300 V1</h4>
+                    <p><i class="fa-solid fa-dollar-sign"></i> 3.209.000.000 VNĐ</p>
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <a class="notSp" href="#">ORDER NOW</a>
+                </div>
+                <div class="bestProduct col20">
+                    <img src="./image/bmw.avif" alt="BMW">
+                    <h4>BMW M AUTOBILE</h4>
+                    <p><i class="fa-solid fa-dollar-sign"></i> 3.798.000.000 VNĐ</p>
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                    <a class="notSp" href="#">ORDER NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ani" id="models">
+            <div id="contain">
+            <div class="model">
+                <h2>DỰ KIẾN RA MẮT ĐỢT 1</h2>
+                <p></p>
+                <div class="modelChild flex">
+                    <div class="col50 mainImg">
+                        <h3>VINFAST VF5</h3>
+                        <h4 class="mText">Trắng - Brahminy White</h4>
+                        <img class="mImg" src="./image/VF5_1.webp" alt="">
+                        <p><i style="font-weight: 1.2rem;" class="fa-solid fa-dollar-sign"></i> 885.000.000 VNĐ</p>
+                    </div>
+                    <div class="subImgs col50">
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/vf5_2_1.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #f02828;"></i> Đỏ - Crimson Red</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_3.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #000000;"></i> Đen - Jet Black</h4>
+                            </li>
+                        </ul>
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/VF5_4.png" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #e56d0b;"></i> Cam - Sunset Orange</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_6.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #246dcc;"></i> Xanh - VinFast Blue</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model">
+                <h2>DỰ KIẾN RA MẮT ĐỢT 2</h2>
+                <p></p>
+                <div class="modelChild flex">
+                    <div class="col50 mainImg">
+                        <h3>VINFAST VF5</h3>
+                        <h4 class="mText">Trắng - Brahminy White</h4>
+                        <img class="mImg" src="./image/VF5_1.webp" alt="">
+                        <p><i class="fa-solid fa-dollar-sign"></i> 885.000.000 VNĐ</p>
+                    </div>
+                    <div class="subImgs col50">
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/vf5_2_1.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #f02828;"></i> Đỏ - Crimson Red</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_3.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #000000;"></i> Đen - Jet Black</h4>
+                            </li>
+                        </ul>
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/VF5_4.png" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #e56d0b;"></i> Cam - Sunset Orange</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_6.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #246dcc;"></i> Xanh - VinFast Blue</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model">
+                <h2>DỰ KIẾN RA MẮT ĐỢT 3</h2>
+                <p></p>
+                <div class="modelChild flex">
+                    <div class="col50 mainImg">
+                        <h3>VINFAST VF5</h3>
+                        <h4 class="mText">Trắng - Brahminy White</h4>
+                        <img class="mImg" src="./image/VF5_1.webp" alt="">
+                        <p><i class="fa-solid fa-dollar-sign"></i> 885.000.000 VNĐ</p>
+                    </div>
+                    <div class="subImgs col50">
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/vf5_2_1.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #f02828;"></i> Đỏ - Crimson Red</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_3.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #000000;"></i> Đen - Jet Black</h4>
+                            </li>
+                        </ul>
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/VF5_4.png" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #e56d0b;"></i> Cam - Sunset Orange</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_6.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #246dcc;"></i> Xanh - VinFast Blue</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model">
+                <h2>DỰ KIẾN RA MẮT ĐỢT 4</h2>
+                <p></p>
+                <div class="modelChild flex">
+                    <div class="col50 mainImg">
+                        <h3>VINFAST VF5</h3>
+                        <h4 class="mText">Trắng - Brahminy White</h4>
+                        <img class="mImg" src="./image/VF5_1.webp" alt="">
+                        <p><i class="fa-solid fa-dollar-sign"></i> 885.000.000 VNĐ</p>
+                    </div>
+                    <div class="subImgs col50">
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/vf5_2_1.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #f02828;"></i> Đỏ - Crimson Red</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_3.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #000000;"></i> Đen - Jet Black</h4>
+                            </li>
+                        </ul>
+                        <ul class="subImg flex">
+                            <li class="col50">
+                                <img src="./image/VF5_4.png" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #e56d0b;"></i> Cam - Sunset Orange</h4>
+                            </li>
+                            <li class="col50">
+                                <img src="./image/VF5_6.webp" alt="">
+                                <h4><i class="fa-solid fa-crown" style="color: #246dcc;"></i> Xanh - VinFast Blue</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnn Right"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="btnn Left"><i class="fa-solid fa-chevron-left"></i></div>
+        </section>
+    
+        <section class="ani" id="tienIch">
+            <h2 class="hehe">Tiện ích dành cho bạn</h2>
+            <div class="tienIchChild col90 flex">
+                <div class="col30 flex">
+                    <div class="col20"><i class="fa-solid fa-car-side"></i></div>
+                    <div class="leftTI col80">
+                        <h4>Đăng kí lái thử</h4>
+                        <p>Lái thử xe gần nhà nhanh chóng, thuận tiện nhất.</p>
+                        <a class="btn notSp" href="#">Đặt lịch hẹn</a>
+                    </div>
+                </div>
+                <div class="col30 flex">
+                    <div class="col20"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="leftTI col80">
+                        <h4>Dự toán giá lăn bánh</h4>
+                        <p>Tính toán các loại thuế, phí cần thiết khi mua xe.</p>
+                        <a class="btn notSp" href="#">Dự toán</a>
+                    </div>
+                </div>
+                <div class="col30 flex">
+                    <div class="col20"><i class="fa-solid fa-headphones"></i></div>
+                    <div class="leftTI col80">
+                        <h4>Chat cùng tư vấn viên</h4>
+                        <p>Nhận tư vấn từ chuyên gia để tìm ra mẫu xe phù hợp.</p>
+                        <a class="btn notSp" href="#">Trò chuyện</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="phoBien">
+            <p></p>
+            <h2>Phổ biến tại HONTRI</h2>
+            <div class="col90 flex phoBienChilds">
+                <div class="col70 phoBienChild1">
+                    <p><a href="./HTML/buy.html">Mua xe <i class="fa-solid fa-angle-right"></i></a> </p>
+                    <p class="flex"><input id="searchOto" type="text" placeholder=" Tìm kiếm ô tô theo thương hiệu, kiểu dáng"><i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i> </p>
+                    <div id="goiY">
+                    
+                    </div>
+                    <div class="flex">
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_toyota.png" alt="">
+                            <p>Toyota</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_huyndai.png" alt="">
+                            <p>Hyundai</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_vinfast.png" alt="">
+                            <p>VinFast</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_kia.png" alt="">
+                            <p>Kia</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_ford.png" alt="">
+                            <p>Ford</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_mazda.png" alt="">
+                            <p>Mazda</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_honda.png" alt="">
+                            <p>Honda</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_mitsubishi.png" alt="">
+                            <p>Mitsubishi</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_peugeot.png" alt="">
+                            <p>Peugeot</p>
+                        </a>
+                    </div>
+
+                    <div class="flex">
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_mercedes.png" alt="">
+                            <p>Mercedes</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_nissan.png" alt="">
+                            <p>Nissan</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_Volkswagen.png" alt="">
+                            <p>olkswagen</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_chevrolet.png" alt="">
+                            <p>Chevrolet</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_lexus.png" alt="">
+                            <p>Lexus</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_bmw.png" alt="">
+                            <p>BMW</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_landrover.png" alt="">
+                            <p>Landrover</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <img src="./image/im_spot_brand_logo_Subaru.png" alt="">
+                            <p>Subaru</p>
+                        </a>
+                        <a href="#" class="col10 imgTH notSp">
+                            <i style="font-size: 30px; padding: 13px;" class="fa-solid fa-sliders"></i>
+                            <p>Xem thêm</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col30 phoBienChild2">
+                    <p><a href="./HTML/sell.html">Bán xe <i class="fa-solid fa-angle-right"></i></a></p>
+                    <div class="hangDong">
+                        <p>Hãng xe</p>
+                        <select class="cars">
+                            <option>Toyota</option>
+                            <option>Hyundai</option>
+                            <option>VinFast</option>
+                            <option>Kia</option>
+                            <option>Ford</option>
+                            <option>Mazda</option>
+                            <option>Honda</option>
+                            <option>Mitsubishi</option>
+                          </select>
+                    </div>
+                    <div class="hangDong">
+                        <p>Dòng xe</p>
+                        <select class="cars">
+                            <option>Volkswagen</option>
+                            <option>Chevrolet</option>
+                            <option>Lexus</option>
+                            <option>BMW</option>
+                            <option>Landrover</option>
+                            <option>Subaru</option>
+                          </select>
+                    </div>
+                    <button><a class="notSp" href="#">BẮT ĐẦU</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Phần footer  -->
+    <footer>
+        <div class="back_button">
+            <button id="scroll"><i class="fa-solid fa-angle-up"></i></button>
+            <p>Lên trên</p>
+        </div>
+
+        <div class="connect">
+            <div class="content">
+                <p>Kết nối với HONTRI</p>
+                <p>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</p>
+            </div>
+            <div class="linked"><a href="#">Đăng ký và nhận quà tặng</a></div>
+        </div>
+
+        <div class="info">
+            <div class="info1">
+                <div class="title">Các dòng xe</div>
+                <div class="detail">
+                    <p>Xe thuần điện EQ</p>
+                    <p>Sedan</p>
+                    <p>SUV</p>
+                    <p>cabriolet</p>
+                    <p>Xe đa dụng</p>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="title">Mua xe</div>
+                <div class="detail">
+                    <p>Ưu đãi mới nhất</p>
+                    <p>Tìm xe mới</p>
+                    <p>Tìm xe đã qua sử dụng</p>
+                    <p>Bảng giá & Brochure</p>
+                    <p>Cấu hình xe</p>
+                </div>
+            </div>
+            <div class="info3">
+                <div class="title">Tư vấn mua xe</div>
+                <div class="detail">
+                    <p>Yêu cần tư vấn</p>
+                    <p>Đăng ký lái thử</p>
+                    <p>Tìm nhà phân phối gần nhất</p>
+                </div>
+            </div>
+            <div class="info4">
+                <div class="title">Dịch vụ</div>
+                <div class="detail">
+                    <p>Ưu đãi dịch vụ</p>
+                    <p>Đặt hẹn dịch vụ</p>
+                    <p>Hướng dẫn sử dụng dành cho chủ sở hữu xe</p>
+                    <p>Phụ kiện chính hãng</p>
+                </div>
+            </div>
+            <div class="info5">
+                <div class="title">Khám phá HONTRI</div>
+                <div class="detail">
+                    <p>Câu chuyện của chúng tôi</p>
+                    <p>Liện hệ</p>
+                    <p>Quyền riêng tư</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_of_footer">
+                <span>Bản quyền nội dung</span><span>Cài đặt</span><span>Quyền riêng tư và bảo vệ dữ liệu</span><span>Thông tin pháp lý</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+:root{
+    --x10: 10px;
+    --x20: 20px;
+    --white:#ffffff ;
+    --blue: #050a30;
+    --black: #000000;
+    --gray: #DCDCDC;
+    --yellow: #FFD700;
+}
+.flex{
+    flex-direction: column;
+    align-items: initial;
+}
+.haveSub{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.news{
+    background-color: transparent;
+    border-radius: 0;
+    border: transparent;
+}
+#user{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.submenu, #last{
+    position: relative;
+    background-color: #7f7f7f;
+}
+.submenu a, #last a{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    padding: 10px 20px;
+}
+
+.submenu>li:first-child a, #last>li:first-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu>li:last-child a, #last>li:last-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu::after{
+    display: none;
+}
+.submenu, #last{
+    background-color: transparent;
+}
+.submenu>li:hover a, #last>li:hover>a{
+    color: black !important;
+}
+
+#last{
+    left: 0;
+}
+
+.fa-bars{
+    display: block !important;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#topMenu{
+    justify-content: flex-start;
+    flex-direction: row;
+    position: fixed;
+}
+a.khampha{
+    display: none;
+}
+#topMenu>div>div:first-child{
+    flex-direction: row-reverse;
+    background: #000000 !important;
+    width: 100%;
+}
+#topMenu>div{
+    background: transparent;
+}
+
+.news{
+    margin-right: 0;
+    padding: 0;
+}
+.Menu{
+    background-color: gray;
+    width: 50%;
+    box-shadow: 2px 3px 5px black;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+
+#last>li:nth-child(2){
+    border-bottom: 1.5px solid transparent;
+}
+/* main */
+.top_button button{
+    font-size: 40px;
+    color:var(--yellow);
+}
+/*                sec1                  */
+
+.poster img{
+    width:100%;
+    display:block; /* loại bỏ khoảng trắng dưới ảnh*/
+}
+.poster {
+    margin-top: 10%;
+}
+.note_poster{
+    top:10%;
+    left:15%;
+    font-size: 20px;
+}
+.note_poster p{
+    font-size: 15px;
+}
+.note_poster .signup{
+    font-size: 15px;
+    padding:1rem;
+    margin-top: 10%;
+    width:40%;
+}
+.hotline{
+    margin-left: 60%;
+}
+
+/* sec2 */
+.sec2 {
+    display:block;
+}
+.sec2 h1{
+    color:rgb(81, 81, 81);
+    margin-left: 1rem;
+    font-size: 20px;
+}
+.sec2 img{
+    display:none;
+}
+.sec2 .form{
+    padding:1rem;
+    font-size: 20px;
+    border:1px solid grey;
+    border-radius: 30px;
+    margin-top: 5%;
+    width:90%;
+    margin-left: 5%;
+    text-align: center;
+}
+/* sec3 */
+
+.sec3 .car h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+.sec3>div{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    padding:2rem;
+    text-align:left;
+    grid-gap:30px;
+    font-size: 70%;
+}
+.sec3 img{
+    width:200px;
+    padding:0.5rem;
+}
+.sec3 .car .anh{
+    margin-top: 60px;
+}
+
+.sec3 .car{
+    height:300px;
+    position:relative;
+}
+.sec3 .car .describe{
+    left:0;
+    right:0;
+    font-size: 12px;
+}
+.sec3 .car span{
+    padding:0.5rem;
+}
+.sec3 .car .price{
+    font-size: 20px;
+    color:#FFD700
+}
+.sec3 .car .luu {
+    padding:0.5rem;
+    background-color:#f0c207;
+    color:#050a30;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+/* nang luc */
+#nangLuc h1{
+    font-size: 30px;
+}
+#details span{
+    font-size: 20px;
+}
+#details>div>div>p:first-child{
+    font-size: 25px;
+    margin: 10px;
+}
+#details>div>p:nth-child(2) {
+    font-size: 15px;
+}
+#details>div{
+    margin: 10px;
+}
+/*______________________________footer_______________________________*/
+
+.footer2 .connect .linked{
+    padding:0.5rem;
+    font-size: 15px;
+}
+.footer2 .info{
+    margin-top: 10%;
+    margin-left: 2%;
+}

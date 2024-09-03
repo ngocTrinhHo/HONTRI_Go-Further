@@ -1,0 +1,575 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --x10: 10px;
+    --x20: 20px;
+    --lightblue: #f3f5ff;
+    --white:#ffffff ;
+    --blue: #050a30;
+    --black: #000000;
+    --gray: #DCDCDC;
+    --yellow: #FFD700;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col20{
+    width: 20%;
+}
+.col50{
+    width: 50%;
+}
+.col40{
+    width: 40%;
+}
+
+.col90{
+    width: 90%;
+}
+
+.col30{
+    width: 30%;
+}
+
+.col80{
+    width: 80%;
+}
+.col70{
+    width: 70%;
+}
+
+/* nút quay lai ở trên */
+.top_button button{
+    margin-bottom:1%;
+    margin-left: 1%;
+    font-size: 60px;
+    border-color:transparent;
+    border-radius: 50px;
+    background:transparent;
+    padding:0.5rem;
+    position:fixed;
+    bottom:0;
+    cursor:pointer;
+    z-index: 9000;
+}
+.top_button button:hover{
+    transform:scale(1.1,1.1);
+    color:var(--yellow);
+}
+.fa-bars{
+    top: 0px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none !important;
+    color: var(--white);
+}
+/* menu + video */
+div#topMenu{
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+}
+
+#topMenu>div>ul{
+    list-style-type: none;
+}
+
+#topMenu>div>ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+    font-style: bold;
+}
+
+#topMenu>div>ul div>div{
+    padding: var(--x10);
+    margin: 0 var(--x10);
+}
+
+.logoHeader{
+    width: 70px;
+}
+
+.news{
+    background-color: var(--blue);
+    border-radius: var(--x20) var(--x20);
+    border: 1px solid lightblue;
+    margin-right: var(--x10);
+    padding: 10px var(--x20);
+}
+
+a.news{
+    color: var(--white) !important;
+}
+
+a.news:hover{
+    color: var(--yellow);
+}
+.haveSub>li:first-child{
+    padding: 0 5px;
+}
+
+.fa-circle-user{
+    font-size: 1.5rem;
+}
+
+.haveSub{
+    position: relative;
+}
+
+.submenu, #last{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    margin-top: var(--x10);
+    left: 0;
+    width: 250%;
+}
+
+#last{
+    width: 150%;
+    margin-top: 15px;
+    right: 0;
+    left: initial;
+    position: absolute;
+}
+
+.submenu a, #last a{
+    display: block;
+    background-color: var(--gray);
+    padding: var(--x20) 40px;
+    color: var(--black) !important;
+}
+.submenu>li:first-child a, #last>li:first-child a{
+    border-radius: var(--x20) var(--x20) 0 0;
+    box-shadow: 1px 3px 5px var(--gray);
+}
+
+.submenu>li:last-child a, #last>li:last-child a{
+    border-radius: 0 0 var(--x20) var(--x20);
+    box-shadow: 1px 3px 5px var(--gray);
+}
+
+.submenu li:hover a, #last li:hover a{
+    background-color: var(--gray);
+}
+.submenu::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--white) transparent;
+    bottom: 100%;
+    display: block;
+    position: absolute;
+    right: 75%;
+}
+
+#last>li:nth-child(2){
+    border-bottom: 1.5px solid grey;
+}
+
+.haveSub:hover .submenu, .haveSub:hover #last{
+    display: block;
+}
+.hotline{
+    border-radius: 30px;
+    background-color:rgba(5, 10, 48,0.5);
+    color:rgb(206, 203, 203);
+    padding:0.5rem;
+    width:fit-content;
+    display:flex;
+    bottom: 10%;
+    right: 3%;
+    position:fixed;
+    z-index: 999;
+}
+.hotline .phone{
+    animation: rung1 0.5s infinite;
+}
+@keyframes rung1{
+    0%,100%{
+        transform:translateX(0);
+    }
+    10%,20%,50%,70%,90%{
+        transform:translateX(-5px);
+    }
+    20%,40%,60%{
+        transform:translateX(5px);
+    }
+}
+.hotline i{
+    background-color: white;
+    border-radius: 30px;
+    padding:1rem;
+    margin-right: 20px;
+}
+.hotline p:first-child{
+    color:white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* banner */
+#banner{
+    /* margin-top: 10vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner img{
+    width: 100%;
+}
+
+#banner>div{
+    position: absolute;
+}
+#banner p:first-child{
+    color: var(--white);
+    padding: 15px;
+    font-size: 2rem;
+    font-style: bolder;
+}
+#banner p{
+    text-align: center;
+}
+#banner p:nth-child(2)>a{
+    border: 1px solid var(--black);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    padding: 15px;
+    border-radius: var(--x10);
+    background-color: var(--yellow);
+    font-style: bolder;
+    margin: var(--x20);
+    font-weight: bold;
+}
+
+/* 3 bước bán xe */
+#baBuoc{
+    margin: 40px 0;
+    height: 500px;
+}
+#baBuoc>div.col80{
+    margin: var(--x20) auto;
+}
+
+#baBuoc>h2{
+    text-align: center;
+    color: var(--blue);
+    font-size: 3rem;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.buoc{
+    margin: var(--x20);
+    padding: 40px 20px;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px var(--gray);
+    position: relative;
+    height: 200px;
+    background-color: var(--white);
+}
+
+.buoc>span{
+    padding: var(--x10);
+    background-color: #314dd3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 0;
+    color: var(--white);
+}
+.buoc h4{
+    color: var(--blue);
+    margin-left: var(--x10);
+}
+
+.buoc>p{
+    margin: var(--x10) 0;
+    color: var(--blue);
+}
+.fa-calendar, .fa-envelope, .fa-clock{
+    font-size: 4rem;
+    color: var(--yellow);
+}
+#baBuoc>p:first-child::after{
+    content:"";
+    position: absolute;
+    border-width: 3px;
+    border-style: solid;
+    border-color:var(--yellow);
+    border-radius: var(--x20);
+    width: 7%;
+    left: 47%;
+}
+
+/* form bán xe */
+#formBan{
+    padding: 40px;
+    background-color: var(--blue);
+    color: var(--black);
+    overflow: auto;
+}
+.form>h3{
+    text-align: center;
+    padding: 20px;
+}
+.form{
+    float: right;
+    background-color: var(--white);
+    padding: var(--x20);
+    border-radius: var(--x20);
+    margin: 0 auto;
+    position: relative;
+}
+
+.form p{
+    color: var(--black);
+    font-size: 0.7rem;
+    margin: var(--x10) 0;
+}
+.form select, .form button, .form input{
+    color: gray;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 0 0 var(--x10) 0;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.form input{
+    width: 72%;
+}
+.form button{
+    margin: var(--x20) var(--x10) 0 0;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.form button:nth-child(2){
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+#formBan>div:first-child{
+    margin-right: 20px ;
+}
+#formBan>div:first-child>p{
+    font-size: 2.25rem;
+    color: var(--white);
+    margin: 30px 0 var(--x20) 0;
+}
+#formBan>div:first-child>span{
+    color: var(--yellow);
+}
+#formBan>div:first-child>span:first-child::after{
+    content: "";
+    border-color: var(--yellow);
+    border-width: 2px;
+    border-style: solid;
+    width: 10%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+/* nhan xet */
+#nhanxet{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px 0;
+}
+#cnt{
+    transition: 0.75s ease-in-out; 
+    position: relative;
+}
+#nhanxet>p::after{
+    content: "";
+    border-color: var(--yellow) ;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: var(--x20);
+    width: 10%;
+    left: 45%;
+    position: absolute;
+    margin-top: var(--x10);
+}
+#nhanxet>h2{
+    text-align: center;
+    color: var(--blue);
+    padding: var(--x20);
+    font-size: 2.5rem;
+}
+.cmts{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.cmt{
+    border: 1px solid var(--gray);
+    box-shadow: 1px 3px 5px var(--gray);
+    height: 80vh;
+    margin: 0 60px 0 0;
+    flex-shrink: 0;
+}
+
+.cmt>h4, .cmt>p{
+    padding: var(--x10) var(--x20);
+}
+.cmt>p{
+    color: gray;
+}
+.cmt>img{
+    width: 100%;
+    padding-bottom: var(--x20);
+}
+.btnn{
+    color: var(--gray);
+    font-size: 2rem;
+    padding: 20px;
+    margin: 0 10px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.Right{
+    right: 0;
+}
+.Left{
+    left: 0;
+}
+
+.btnn:hover{
+    color: var(--yellow);
+    border: 1px solid (--gray) ;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+/*______________________________footer_______________________________*/
+
+footer{
+    margin-top: 100px;
+    background-color: var(--blue);
+    color:rgba(255, 255, 255, 0.736);
+}
+/* nút quay lại */
+footer .back_button{
+   color:white;
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 100px;
+   margin-top: 100px;
+   padding:2rem;
+}
+footer .back_button button{
+    font-size: 50px;
+    border:none;
+    background-color: transparent; /* không có nền */
+    cursor:pointer;
+    color:white;
+}
+footer .back_button button:hover {
+    color: rgb(126, 192, 218);
+}
+/* kết nối */
+footer .connect{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    border:1px solid white;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+footer .content{
+    margin:auto;
+    padding:2rem;
+    display:grid;
+    grid-gap:10px;
+}
+footer .content>p:nth-child(1){
+    font-size: 20px;
+    color:white;
+}
+footer .connect .linked{
+    background-color: rgb(66, 116, 255);
+    border-radius: 5px;
+    padding:1rem;
+    margin:auto;
+    cursor:pointer;
+}
+footer .connect .linked a{
+    color:white;
+    text-decoration: none;
+}
+footer .connect .linked:hover{
+    background-color: rgb(38, 70, 158);
+}
+
+/* info */
+
+.info{
+    margin-top: 100px;
+    margin-left: 50px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding:1rem;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: flex-start;/*Bắt đàu từ trên theo chiều dọc*/
+}
+
+.info .title{
+    color:white;
+    padding:1rem;
+}
+.info .detail{
+    padding:0.5rem;
+}
+.info .detail p{
+    padding:0.5rem;
+    cursor:pointer;
+    position:relative;
+    /* overflow:hidden; */
+}
+.info .detail p::before{ /*tạo gạch chân*/
+    position:absolute;
+    content:''; /*tạo nội dung rỗng cho phần tử giả*/
+    left:0;
+    bottom:0;
+    width:0;
+    height:0.5px;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+.info .detail p:hover::before{
+    width:100%;
+}
+
+/* last  */
+.last_of_footer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    padding:5rem;
+    cursor:pointer;
+}

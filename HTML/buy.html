@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm xe mới trực tuyến</title>
+    <link rel="shortcut icon" href="../image/logo_Header.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="../CSS/buy.css" rel="stylesheet">
+    <link rel="stylesheet" href="..//Mobile/mobile_buy.css" media="screen and (max-width:600px)">
+
+</head>
+<body onload="init()">
+    <header>
+        <div id="topMenu" class="flex">
+            <div class="flex" style="width: 100%;">
+                <div class="flex col30">
+                    <a href="/index.html"><img class="logoHeader" src="../image/logo_Header.png" alt="logo"></a>
+                    <i class="fa-solid fa-bars" id="fal"></i>
+                </div>
+                <ul class="flex Menu">
+                    <div class="flex">
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/buy.html">Mua xe</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/buy.html">Xe mới</a></li>
+                                    <li><a class="notSp" href="#">Xe cũ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/buy.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+
+                        <div class="flex haveSub">
+                            <li><a href="../HTML/sell.html">Bán xe</a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/tryDriving.html">Tiện ích</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/tryDriving.html">Đăng kí lái thử</a></li>
+                                    <li><a class="notSp" href="#">Dự đoán giá lăn bánh</a></li>
+                                    <li><a class="notSp" href="#">So sánh xe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/tryDriving.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li><a class="notSp" href="#">Tin tức</a></li>
+                        </div>                           
+                        <div class="flex haveSub"><li><a class="notSp" class="news" href="#">Đăng tin</a></li></div>
+                        <div class="flex haveSub" id="user">
+                            <li><a href="../HTML/signIn_Up.html" class="fa-solid fa-circle-user"></a></li>
+                            <li>
+                                <a href="../HTML/signIn_Up.html">Tài khoản</a>
+                                <ul id="last">
+                                    <li><a href="../HTML/signIn_Up.html">Đăng nhập</a></li>
+                                    <li><a href="../HTML/signIn_Up.html">Đăng kí</a></li>
+                                    <li><a class="notSp" href="#">Góp ý</a></li>
+                                    <li><a class="notSp" href="#">Hỗ trợ</a></li>
+                                    <li><a class="notSp" href="#">Liên hệ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+      
+    <!-- phần chính -->
+    <main>
+        <div class="yeuThich"><i class="fa-solid fa-heart-circle-plus" style="color:#efc21f"></i>
+            <span>Yêu thích</span>
+        </div>
+        <div class="love_things">
+            <div class="include">
+                <div class="head">Danh sách yêu thích của bạn</div>
+                <div class="body">
+                    <div id="goiY">
+                    </div>
+                </div>
+                <div class="foot">
+                    <button>Đóng</button>
+                </div>
+            </div>
+        </div>
+        <div class="top_button">
+            <button id="top_button"><i class="fa-regular fa-circle-down fa-rotate-180" ></i></button>
+        </div>
+        <section class="avatar">
+            <div>
+                <img src="../image/banner_buy.jpg">
+                <div>
+                    <p class="welcome">Điều gì đang diễn ra tại HONTRI</p>
+                    <p>Hãy đến và tìm hiểu ngay , chất lượng uy tín bền vững.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="box_avatar">
+                <div class="box">
+                    <p><i class="fa-solid fa-sack-dollar" style="color: #ffffff;"></i>Đảm bảo hoàn lại tiền</p>
+                    <p>Nếu bạn không thích chiếc xe đó, hãy trả lại cho chúng tôi.</p>
+                </div>
+                <div class="box">
+                    <p><i class="fa-solid fa-screwdriver-wrench" style="color: #ffffff;"></i>Mua hàng an toàn</p>
+                    <p>Đảm bảo tình trạng kỹ thuật của mọi chiếc xe được bán ra.</p>
+                </div>
+                <div class="box">
+                    <p><i class="fa-solid fa-award" style="color: #ffffff;"></i>Bảo hành 6 tháng</p>
+                    <p>Với mỗi chiếc xe bạn sẽ nhận được bảo hành mở rộng.</p>
+                </div>
+        </section>
+
+        <section class="sec1">
+            <div class="title">Mua & khám phá xe mới trực tuyến</div>
+            <div class="uu_diem">
+                <span><i class="fa-solid fa-circle-check"></i>Xem xe có sẵn toàn quốc</span>
+                <span><i class="fa-solid fa-circle-check"></i>Tiết kiệm thời gian mua xe</span>
+                <span><i class="fa-solid fa-circle-check"></i>Được liên hệ nhanh chóng</span>
+            </div>
+            <div class="hotline">
+                <div class="phone"><i class="fa-solid fa-phone-volume" style="color: #efc21f;"></i></div>
+                <div>
+                    <p>Hotline:</p>
+                    <p>0938.906.725</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="filter">
+                    
+                    <div class="menu_of_filter">
+                        <div class="boloc">Bộ lọc</div>
+                        
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-car"></i>Hãng xe
+                                <button class="dropdown" ><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="checkbox">Honda</li>
+                                    <li><input type="checkbox">Hyundai</li>
+                                    <li><input type="checkbox">Audi</li>
+                                    <li><input type="checkbox">Ford</li>
+                                    <li><input type="checkbox">Kia</li>
+                                    <li><input type="checkbox">Lexus</li>
+                                    <li><input type="checkbox">Toyota</li>
+                                    <li><input type="checkbox">Mercedes-Benz</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-hand-holding-dollar"></i></i>Giá
+                                <button class="dropdown" ><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul class="Gia">
+                                    <li><input type="range"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-award"></i>Chương trình
+                                <button class="dropdown" ><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="checkbox">Ưu đãi mới</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-chair"></i>Số chỗ ngồi
+                                <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="checkbox">4</li>
+                                    <li><input type="checkbox">5</li>
+                                    <li><input type="checkbox">6</li>
+                                    <li><input type="checkbox">7</li>
+                                    <li><input type="checkbox">8</li>
+                                    <li><input type="checkbox">9</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-calendar-days"></i>Năm sản xuất
+                                <button class="dropdown" ><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="range"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-car-side"></i>Kiểu dáng
+                                <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="checkbox">Coupe</li>
+                                    <li><input type="checkbox">Wagon</li>
+                                    <li><input type="checkbox">Minivan</li>
+                                    <li><input type="checkbox">Pick-up</li>
+                                    <li><input type="checkbox">Sedan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-gas-pump"></i>Nhiên liệu
+                                <button class="dropdown" ><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="checkbox">Xăng</li>
+                                    <li><input type="checkbox">Dầu</li>
+                                    <li><input type="checkbox">Điện</li>
+                                    <li><input type="checkbox">Hybrid</li>
+                                    <li><input type="checkbox">Plug-in Hybrid</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-brush"></i>Màu sắc
+                                <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul class="color">
+                                    <li><span title="Vàng"><i class="fa-solid fa-square" style="color: #FFD43B;"></i></span></li>
+                                    <li><span title="Nâu"><i class="fa-solid fa-square" style="color: brown;"></i></span></li>
+                                    <li><span title="Đỏ"><i class="fa-solid fa-square" style="color: red;"></i></span></li>
+                                    <li><span title="Trắng"><i class="fa-solid fa-square" style="color: white;"></i></span></li>
+                                    <li><span title="Cam"><i class="fa-solid fa-square" style="color: rgb(215, 129, 31);"></i></span></li>
+                                    <li><span title="Xanh lá"><i class="fa-solid fa-square" style="color: rgb(16, 213, 16);"></i></span></li>
+                                    <li><span title="Tím"><i class="fa-solid fa-square" style="color: rgb(197, 12, 197);"></i></span></li>
+                                    <li><span title="Xanh dương"><i class="fa-solid fa-square" style="color: blue;"></i></span></li>
+                                    <li><span title="Hồng"><i class="fa-solid fa-square" style="color: pink;"></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_of_filter">
+                            <div class="flex top">
+                                <i class="fa-solid fa-location-dot"></i>Vị trí
+                                <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <div class="sub">
+                                <ul>
+                                    <li><input type="text" placeholder="Nhập địa chỉ..."></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cars">
+                <!-- xe 1 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/audi-png.png"></div>
+                    <div class="describe">
+                        <h1> Audi Q8 55 TFSI S-Line</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2023</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Đen</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 3.700.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>68 Trung Kính - P.yên Hòa - Cầu Giấy Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 2 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/audi-png-red.png"></div>
+                    <div class="describe">
+                        <h1>Audi Q3 35 TFSI </h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2022</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Crossover</p>
+                            <p><i class="fa-solid fa-brush"></i>Đỏ</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 2.010.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh - Quận 7</div>
+                    </div>
+                </div>
+                <!-- xe 3 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/Mercedes.webp"></div>
+                    <div class="describe">
+                        <h1>Mercedes GLC 200</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2023</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Sedan</p>
+                            <p><i class="fa-solid fa-brush"></i>Đen</p>
+                            <p><i class="fa-solid fa-chair"></i>4</p>
+                        </div>
+                        <div class="Gia">$ 2.299.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>Hoàn Kiếm, Long Biên Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 4 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/huyndai.png"></div>
+                    <div class="describe">
+                        <h1>Mercedes-Benz GLC</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2023</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Sedan</p>
+                            <p><i class="fa-solid fa-brush"></i>Trắng</p>
+                            <p><i class="fa-solid fa-chair"></i>4</p>
+                        </div>
+                        <div class="Gia">$ 3.599.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>VILLA 07 Lô C1 Khu đô thị Yên Hòa, Phường Yên Hòa, Quận Cầu Giấy, Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 5 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/VF5_4.png"></div>
+                    <div class="describe">
+                        <h1>VinFast VF 3</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2023</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Điện</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Sedan</p>
+                            <p><i class="fa-solid fa-brush"></i>cam</p>
+                            <p><i class="fa-solid fa-chair"></i>4</p>
+                        </div>
+                        <div class="Gia">$ 322.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>Hoàn Kiếm, Long Biên Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 6 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/VF5_3.webp"></div>
+                    <div class="describe">
+                        <h1>VinFast VF8 Lux Plus</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2024</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Đen</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 1.359.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>333 Điện Biên Phủ, P.15, Q.Bình Thạnh TP HCM</div>
+                    </div>
+                </div>
+                <!-- xe 7 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/G63.webp"></div>
+                    <div class="describe">
+                        <h1>Mercedes Benz G class G63</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2024</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Xám</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 11.750.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>11 Phạm Hùng, phường Mỹ Đình 2, Nam Từ Liêm Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 8 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/G63_den.png"></div>
+                    <div class="describe">
+                        <h1>Mercedes Benz G class G63</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2022</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Đen</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 10.990.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh - Quận 7</div>
+                    </div>
+                </div>
+                <!-- xe 9 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                    <div class="image"><img src="../image/VF5_6.webp"></div>
+                    <div class="describe">
+                        <h1>VinFast VF5 Plus</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2024</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Điện</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Xanh</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 468.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>125-127 đường số 10, P Tân Phong. Q7 TP HCM</div>
+                    </div>
+                </div>
+                <!-- xe 10 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>                    <div class="image"><img src="../image/ferrari.png"></div>
+                    <div class="describe">
+                        <h1>Ferrari F8 Spyder</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2021</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Convertible</p>
+                            <p><i class="fa-solid fa-brush"></i>Bạc</p>
+                            <p><i class="fa-solid fa-chair"></i>2</p>
+                        </div>
+                        <div class="Gia">$ 26.999.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>88 Tố Hữu, Vạn Phúc, Hà Đông Hà Nội</div>
+                    </div>
+                </div>
+                <!-- xe 11 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>                    <div class="image"><img src="../image/toyota_blue.png"></div>
+                    <div class="describe">
+                        <h1>Toyota Prado VX</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2018</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>SUV</p>
+                            <p><i class="fa-solid fa-brush"></i>Xanh</p>
+                            <p><i class="fa-solid fa-chair"></i>7</p>
+                        </div>
+                        <div class="Gia">$ 1.880.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>25 đường số 16 Phú Mỹ Hưng, Midtown TP HCM</div>
+                    </div>
+                </div>
+                <!-- xe 12 -->
+                <div class="car">
+                    <div id="like" class="like" onclick="like()"><i class="fa-solid fa-heart-circle-plus"></i></div>                    <div class="image"><img src="../image/Toyota_purple.png"></div>
+                    <div class="describe">
+                        <h1>Toyota Yaris 1.5G</h1>
+                        <div class="detail">
+                            <p><i class="fa-solid fa-calendar-days"></i>2019</p>
+                            <p><i class="fa-solid fa-gas-pump"></i>Xăng</p>
+                            <p><i class="fa-solid fa-car"></i>Xe mới</p>
+                            <p><i class="fa-solid fa-car-side"></i>Hatchback</p>
+                            <p><i class="fa-solid fa-brush"></i>Tím</p>
+                            <p><i class="fa-solid fa-chair"></i>5</p>
+                        </div>
+                        <div class="Gia">$ 499.000.000</div>
+                        <div class="Vi_tri"><i class="fa-solid fa-location-dot"></i>22A Cộng Hòa, P4, Quận Tân Bình TP HCM</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="add" id="add_show">Xem thêm</section>
+
+        <section class="sec3">
+            <div class="title">Quý khách hàng có thể liên hệ với HONTRI Việt Nam qua tổng đài:</div>
+            <div class="phonenumber"><a href="#">1800 400110</a></div>
+            <div class="contact">
+                <ul>Giờ hoạt động của trung tâm chăm sóc khách hàng:
+                    <li>Dịch vụ hỗ trợ 24h (Star Assist 24h)</li>
+                    <li>Mua xe & lái thử xe: thứ Hai-thứ Bảy - 8h-22h</li>
+                    <li>Dịch vụ hậu mãi: thứ Hai-thứ Sáu - 8h-17h</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec4">
+            <div class="contacts">
+                <div class="title"><i class="fa-solid fa-envelope"></i> Liên hệ tư vấn</div>
+                <div class="explain">Gửi thông tin và nhận tư vấn nhanh chóng.</div>
+            </div>
+            <div class="contacts">
+                <div class="title"><i class="fa-solid fa-signs-post"></i> Liên hệ nhà phân phối</div>
+                <div class="explain">Tìm & chọn nhà phân phối gần nhất.</div>
+            </div>
+            <div class="contacts">
+                <div class="title"><i class="fa-solid fa-car-on"></i> Đăng ký lái thử</div>
+                <div class="explain">Đặt lịch hẹn lái thử tại nhà phân phối chính hãng.</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Phần footer  -->
+
+    <footer>
+        <div class="back_button">
+            <button id="scroll"><i class="fa-solid fa-angle-up"></i></button>
+            <p>Lên trên</p>
+        </div>
+
+        <div class="connect">
+            <div class="content">
+                <p>Kết nối với HONTRI</p>
+                <p>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</p>
+            </div>
+            <div class="linked" onclick="notsp()"><a href="#">Đăng ký và nhận quà tặng</a></div>
+        </div>
+
+        <div class="info">
+            <div class="info1">
+                <div class="title">Các dòng xe</div>
+                <div class="detail">
+                    <p>Xe thuần điện EQ</p>
+                    <p>Sedan</p>
+                    <p>SUV</p>
+                    <p>cabriolet</p>
+                    <p>Xe đa dụng</p>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="title">Mua xe</div>
+                <div class="detail">
+                    <p>Ưu đãi mới nhất</p>
+                    <p>Tìm xe mới</p>
+                    <p>Tìm xe đã qua sử dụng</p>
+                    <p>Bảng giá & Brochure</p>
+                    <p>Cấu hình xe</p>
+                </div>
+            </div>
+            <div class="info3">
+                <div class="title">Tư vấn mua xe</div>
+                <div class="detail">
+                    <p>Yêu cần tư vấn</p>
+                    <p>Đăng ký lái thử</p>
+                    <p>Tìm nhà phân phối gần nhất</p>
+                </div>
+            </div>
+            <div class="info4">
+                <div class="title">Dịch vụ</div>
+                <div class="detail">
+                    <p>Ưu đãi dịch vụ</p>
+                    <p>Đặt hẹn dịch vụ</p>
+                    <p>Hướng dẫn sử dụng dành cho chủ sở hữu xe</p>
+                    <p>Phụ kiện chính hãng</p>
+                </div>
+            </div>
+            <div class="info5">
+                <div class="title">Khám phá HONTRI</div>
+                <div class="detail">
+                    <p>Câu chuyện của chúng tôi</p>
+                    <p>Liện hệ</p>
+                    <p>Quyền riêng tư</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_of_footer">
+                <span>Bản quyền nội dung</span><span>Cài đặt</span><span>Quyền riêng tư và bảo vệ dữ liệu</span><span>Thông tin pháp lý</span>
+        </div>
+    </footer>
+   
+    <script src="../JS/buy.js"></script>
+</body>
+</html>

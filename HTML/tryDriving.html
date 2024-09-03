@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký lái thử-HONTRI</title>
+    <link href="../image/logo_Header.png" rel="shortcut icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="../CSS/tryDriving.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Mobile/mobile_tryDriving.css" media="screen and (max-width: 600px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+ 
+</head>
+
+<body onload="init()">
+    <header>
+        <div id="topMenu" class="flex">
+            <div class="flex" style="width: 100%;">
+                <div class="flex col30">
+                    <a href="/index.html"><img class="logoHeader" src="../image/logo_Header.png" alt="logo"></a>
+                    <i class="fa-solid fa-bars" id="fal"></i>
+                </div>
+                <ul class="flex Menu">
+                    <div class="flex">
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/buy.html">Mua xe</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/buy.html">Xe mới</a></li>
+                                    <li><a class="notSp" href="#">Xe cũ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/buy.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+
+                        <div class="flex haveSub">
+                            <li><a href="../HTML/sell.html">Bán xe</a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/tryDriving.html">Tiện ích</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/tryDriving.html">Đăng kí lái thử</a></li>
+                                    <li><a class="notSp" href="#">Dự đoán giá lăn bánh</a></li>
+                                    <li><a class="notSp" href="#">So sánh xe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/tryDriving.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li><a class="notSp" href="#">Tin tức</a></li>
+                        </div>                           
+                        <div class="flex haveSub"><li><a class="notSp" class="news" href="#">Đăng tin</a></li></div>
+                        <div class="flex haveSub" id="user">
+                            <li><a href="../HTML/signIn_Up.html" class="fa-solid fa-circle-user"></a></li>
+                            <li>
+                                <a href="../HTML/signIn_Up.html">Tài khoản</a>
+                                <ul id="last">
+                                    <li><a href="../HTML/signIn_Up.html">Đăng nhập</a></li>
+                                    <li><a href="../HTML/signIn_Up.html">Đăng kí</a></li>
+                                    <li><a class="notSp" href="#">Góp ý</a></li>
+                                    <li><a class="notSp" href="#">Hỗ trợ</a></li>
+                                    <li><a class="notSp" href="#">Liên hệ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Phần chính -->
+
+    <main>
+        <div class="top_button">
+            <button id="top_button"><i class="fa-regular fa-circle-down fa-rotate-180" ></i></button>
+        </div>
+        <section class="sec1">
+            <div class="poster">
+                <img src="../image/banner_try.webp">
+                <div class="note_poster">
+                    <h1>Drive with us</h1>
+                    <p>Ready for freedom over your schedule , sign up to drive with HONTRI!</p>
+                    <div class="signup" id="scroll_signup">
+                        Start driving today
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_bottom" id="scroll_bottom">
+                <i class="fa-regular fa-circle-down" style="color: #FFD43B;"></i>
+            </div>
+            <div class="hotline">
+                <div class="phone"><i class="fa-solid fa-phone-volume" style="color: #efc21f;"></i></div>
+                <div>
+                    <p>Hotline:</p>
+                    <p>0938.906.725</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+
+            <div class="image">
+                <h1>ĐĂNG KÝ LÁI THỬ</h1>
+                <div id="slides">
+                    <img src="../image/anh1.jpg">
+                    <img src="../image/anh2.jpg">
+                    <img src="../image/anh3.jpg">
+                    <img src="../image/anh4.jpg">
+                    <img src="../image/anh5.jpg">
+                    <img src="../image/anh6.jpg">
+                </div>
+                
+            </div>
+
+            <div class="form">
+                <p>Để đăng ký lái thử, Quý khách cần cung cấp giấy phép lái xe</p>
+                <div class="info">
+                    <div class="title">LỰA CHỌN MẪU XE</div>
+                    <div class="box">
+                        <div class="type">
+                           <span>
+                                <select>
+                                    <option>VF 5</option>
+                                    <option>VF 6</option>
+                                    <option>VF 7</option>
+                                    <option>VF 8</option>
+                                    <option>VF 9</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">LỰA CHỌN ĐỊA ĐIỂM</div>
+                    <div class="box">
+                        <div class="address">
+                                <select>
+                                    <option>An Giang</option>
+                                    <option>Bà Rịa-Vũng Tàu</option>
+                                    <option>Bắc Giang</option>
+                                    <option>Bắc Kạn</option>
+                                    <option>Bạc Liêu</option>
+                                    <option>Bắc Ninh</option>
+                                    <option>Bến Tre</option>
+                                    <option>Bình Định</option>
+                                    <option>Bình Dương</option>
+                                    <option>Bình Phước</option>
+                                    <option>Bình Thuận</option>
+                                    <option>Cà Mau</option>
+                                    <option>Cần Thơ</option>
+                                    <option>Cao Bằng</option>
+                                    <option>Đà Nẵng</option>
+                                    <option>Đắk Lắk</option>
+            
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">LỰA CHỌN THỜI GIAN</div>
+                    <div class="box">
+                        <div class="day">
+                            <span><input type="month" id="day" ></span>
+                            <!-- <span><i class="fa-solid fa-calendar-days" style="color: #000000;"></i></span> -->
+                        </div>
+                        <div class="hour">
+                            <span><input type="time" id="hour" ></span>
+                            <!-- <span><i class="fa-solid fa-clock" style="color: #000000;"></i></span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">THÔNG TIN KHÁCH HÀNG</div>
+                    <div class="box">
+                        <div class="name">
+                            <span><input type="text" id="name" placeholder="Họ và tên quý khách *"></span>
+                        </div>
+                        <div class="phonenumber">
+                            <span><input type="text" id="phonenumber" placeholder="Số điện thoại *"></span>
+                        </div>
+                        <div class="email">
+                            <span><input type="text" id="email" placeholder="Email *"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="title">YÊU CẦU KHÁC</div>
+                    <div class="box">
+                        <div class="others">
+                            <span><input type="text" id="others" placeholder="Ghi yêu cầu của quý khách tại đây"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div CLASS="signup" id="signup" onclick="sign()">ĐĂNG KÝ LÁI THỬ</div>
+                <div class="contact">Mọi thắc mắc xin liên hệ - HOTLINE - <a href="#">1900 23 23 90</a></div>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <h1>CÓ THỂ BẠN QUAN TÂM</h1>
+            <div class="cars">
+                <!-- <div class="add"><i class="fa-solid fa-circle-chevron-right fa-flip-horizontal" style="color: #FFD43B;"></i></div> -->
+
+                <div class="car top">
+                    <div class="anh"><img src="../image/xeMauDen.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>C 200 Avantgarde (V1)</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 1.599.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                
+                <div class="car top">
+                    <div class="anh"><img src="../image/xeMauDen2.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>KIA Sedona 2.2 DATH</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 845.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car top">
+                    <div class="anh"><img src="../image/xeMauDen3.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>Toyota Camry 2.0G</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 839.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car top">
+                    <div class="anh"><img src="../image/xeMauDen4.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>Honda CR-V</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 985.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car bottom">
+                    <div class="anh"><img src="../image/xeMauDen5.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>Ford Territory </h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 830.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car bottom">
+                    <div class="anh"><img src="../image/xeMauden6.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>Mercedes E300</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 1.649.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car bottom">
+                    <div class="anh"><img src="../image/xeMauDen7.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>Huyndai Santa Fe</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Xăng</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 1.015.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                <div class="car bottom">
+                    <div class="anh"><img src="../image/xeMauDen8.png"></div>
+                    <h1><i class="fa-solid fa-circle-info" style="color:black"></i>EQS 450+ (V1)</h1>
+                    <div class="describe">
+                        <div class="details">
+                            <span><i class="fa-solid fa-gas-pump"></i>Điện</span>
+                            <span><i class="fa-solid fa-code-branch"></i>Số tự động</span>
+                        </div>
+                        <div class="price">$ 5.099.000.000</div>
+                        <div class="luu" onclick="Luu()">Lưu</div>
+                    </div>
+                </div>
+                
+                <!-- <div class="add"><i class="fa-solid fa-circle-chevron-right" style="color: #FFD43B;"></i></div> -->
+
+            </div>
+        </section>
+        <section id="nangLuc">
+            <p></p>
+            <h1>Năng lực của chúng tôi</h1>
+            <div id="details">
+                <div>
+                    <div>
+                        <p class="chiTiet">0</p>
+                        <span>+</span>
+                    </div>
+                    <p>Hướng dẫn viên lái xe</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="chiTiet">0</p>
+                        <span>năm +</span>
+                    </div>
+                    <p>Kinh nghiệm bán xe</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="chiTiet">0</p>
+                        <span>+</span>
+                    </div>
+                    <p>Mẫu xe trên thế giới</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        
+
+    
+        <!-- Phần footer  -->
+
+    <footer class="footer2">
+        <div class="back_button">
+            <button id="scroll"><i class="fa-solid fa-angle-up"></i></button>
+            <p>Lên trên</p>
+        </div>
+
+        <div class="connect">
+            <div class="content">
+                <p>Kết nối với HONTRI</p>
+                <p>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</p>
+            </div>
+            <div class="linked" onclick="notSp()"><a href="#">Đăng ký và nhận quà tặng</a></div>
+        </div>
+
+        <div class="info">
+            <div class="info1">
+                <div class="title">Các dòng xe</div>
+                <div class="detail">
+                    <p>Xe thuần điện EQ</p>
+                    <p>Sedan</p>
+                    <p>SUV</p>
+                    <p>cabriolet</p>
+                    <p>Xe đa dụng</p>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="title">Mua xe</div>
+                <div class="detail">
+                    <p>Ưu đãi mới nhất</p>
+                    <p>Tìm xe mới</p>
+                    <p>Tìm xe đã qua sử dụng</p>
+                    <p>Bảng giá & Brochure</p>
+                    <p>Cấu hình xe</p>
+                </div>
+            </div>
+            <div class="info3">
+                <div class="title">Tư vấn mua xe</div>
+                <div class="detail">
+                    <p>Yêu cần tư vấn</p>
+                    <p>Đăng ký lái thử</p>
+                    <p>Tìm nhà phân phối gần nhất</p>
+                </div>
+            </div>
+            <div class="info4">
+                <div class="title">Dịch vụ</div>
+                <div class="detail">
+                    <p>Ưu đãi dịch vụ</p>
+                    <p>Đặt hẹn dịch vụ</p>
+                    <p>Hướng dẫn sử dụng dành cho chủ sở hữu xe</p>
+                    <p>Phụ kiện chính hãng</p>
+                </div>
+            </div>
+            <div class="info5">
+                <div class="title">Khám phá HONTRI</div>
+                <div class="detail">
+                    <p>Câu chuyện của chúng tôi</p>
+                    <p>Liện hệ</p>
+                    <p>Quyền riêng tư</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_of_footer">
+                <span>Bản quyền nội dung</span><span>Cài đặt</span><span>Quyền riêng tư và bảo vệ dữ liệu</span><span>Thông tin pháp lý</span>
+        </div>
+    </footer>
+
+    
+    <script src="../JS/tryDriving.js"></script>
+</body>
+</html>

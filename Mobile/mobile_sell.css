@@ -1,0 +1,170 @@
+.flex{
+    flex-direction: column;
+    align-items: initial;
+}
+.haveSub{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.news{
+    background-color: transparent;
+    border-radius: 0;
+    border: transparent;
+}
+#user{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.submenu, #last{
+    position: relative;
+    background-color: #7f7f7f;
+}
+.submenu a, #last a{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    padding: 10px 20px;
+}
+
+.submenu>li:first-child a, #last>li:first-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu>li:last-child a, #last>li:last-child a{
+    border-radius: 0;
+    box-shadow: 1px 3px 5px transparent;
+}
+.submenu::after{
+    display: none;
+}
+.submenu, #last{
+    background-color: transparent;
+}
+.submenu>li:hover a, #last>li:hover>a{
+    color: black !important;
+}
+
+#last{
+    left: 0;
+}
+
+.fa-bars{
+    display: block !important;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#topMenu{
+    justify-content: flex-start;
+    flex-direction: row;
+    position: fixed;
+}
+a.khampha{
+    display: none;
+}
+#topMenu>div>div:first-child{
+    flex-direction: row-reverse;
+    background: #000000 !important;
+    width: 100%;
+}
+#topMenu>div{
+    background: transparent;
+}
+
+.news{
+    margin-right: 0;
+    padding: 0;
+}
+.Menu{
+    background-color: gray;
+    width: 50%;
+    box-shadow: 2px 3px 5px black;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+
+#last>li:nth-child(2){
+    border-bottom: 1.5px solid transparent;
+}
+main section:first-child{
+    margin-top: 10%;
+}
+main section:nth-child(2){
+    display: none;
+}
+#banner .col40{
+    width: 70%;
+}
+#banner p:first-child{
+    font-size: 5vw;
+}
+#banner p:nth-child(2)>a{
+    display: none;
+}
+#baBuoc>h2{
+    font-size: 7vw;
+}
+.buoc{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+#baBuoc{
+    margin: 50px 0 100px 0;
+    height: 900px;
+}
+.buoc{
+    padding: 20px;
+}
+.fa-calendar, .fa-envelope, .fa-clock{
+    padding: 0 10px 10px 10px;
+}
+.buoc h4{
+    margin-left: 0;
+}
+#baBuoc>p:first-child::after{
+    width: 20%;
+    left: 40%;
+}
+.form{
+    margin: 0;
+    padding: var(--x10);
+    width: 100%;
+}
+.form select, .form button{
+    width: 100%;
+}
+.form input{
+    width: 90%;
+}
+#formBan>div.col50{
+    display: none;
+}
+#formBan p{
+    font-size: 2vw;
+}
+.form h3{
+    font-size: 4vw;
+}
+.form .flex .col50{
+    width: 100%;
+}
+.cmt.col30{
+    width: 100%;
+    height: 100%;
+}
+#nhanxet>p::after{
+    width: 20%;
+    left: 40%;
+}
+/*______________________________footer_______________________________*/
+
+footer .connect .linked{
+    padding:0.5rem;
+    font-size: 15px;
+}
+footer .info{
+    margin-top: 10%;
+    margin-left: 2%;
+}

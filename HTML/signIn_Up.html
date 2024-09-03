@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/logo_Header.png"/>
+    <link rel="stylesheet" href="../CSS/signIn_Up.css">
+    <link rel="stylesheet" href="../Mobile/mobile_sign.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Đăng Nhập | Đăng Kí</title>
+    <script src="../JS/signIn_Up.js"></script>
+</head>
+<body onload="init()">
+    <header>
+        <button id="switch">
+            <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-sun" style="color: #ffffff;"></i>
+        </button>
+    </header>
+    <main class="col70">
+        <section id="signUp">
+            <form>
+                <h1>Tạo Tài Khoản</h1>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-threads"></i></a>
+                </div>
+                <p>hoặc sử dụng tài khoản Email</p>
+                <input type="text" placeholder="Tên người dùng">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mật khẩu">
+                <button>Đăng kí</button>
+            </form>
+            <div class="cover t1"> 
+                <h1>Chào mừng quay trở lại, </h1>
+                <p>Đăng nhập ngay bằng tài khoản hoặc email của bạn</p>
+                <button>Đăng nhập ngay</button>
+            </div>
+        </section>
+        <section id="signIn">
+            <form>
+                <h1>Sign In</h1>
+                <div class="flex social-icons">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-threads"></i></a>
+                </div>
+                <p>hoặc sử dụng tài khoản Email</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Quên mật khẩu?</a>
+                <button>Đăng nhập</button>
+            </form>
+            <div class="cover t2"> 
+                <h1>Chào bạn, </h1>
+                <p>Đăng kí ngay để sử dụng hiệu quả website</p>
+                <button>Đăng kí ngay</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/logo_Header.png"/>
+    <link rel="stylesheet" href="../CSS/sell.css">
+    <link rel="stylesheet" href="../Mobile/mobile_sell.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>Bán xe chính hãng</title>
+    
+    <script src="../JS/sell.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="hotline">
+        <div class="phone"><i class="fa-solid fa-phone-volume" style="color: #efc21f;"></i></div>
+        <div>
+            <p>Hotline:</p>
+            <p>0938.906.725</p>
+        </div>
+    </div>
+    <div class="top_button">
+        <button id="top_button"><i class="fa-regular fa-circle-down fa-rotate-180" ></i></button>
+    </div>
+    <header>
+        <div id="topMenu" class="flex">
+            <div class="flex" style="width: 100%;">
+                <div class="flex col30">
+                    <a href="/index.html"><img class="logoHeader" src="../image/logo_Header.png" alt="logo"></a>
+                    <i class="fa-solid fa-bars" id="fal"></i>
+                </div>
+                <ul class="flex Menu">
+                    <div class="flex">
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/buy.html">Mua xe</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/buy.html">Xe mới</a></li>
+                                    <li><a class="notSp" href="#">Xe cũ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/buy.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+
+                        <div class="flex haveSub">
+                            <li><a href="../HTML/sell.html">Bán xe</a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li>
+                                <a href="../HTML/tryDriving.html">Tiện ích</a>
+                                <ul class="submenu">
+                                    <li><a href="../HTML/tryDriving.html">Đăng kí lái thử</a></li>
+                                    <li><a class="notSp" href="#">Dự đoán giá lăn bánh</a></li>
+                                    <li><a class="notSp" href="#">So sánh xe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../HTML/tryDriving.html" class="fa-solid fa-angle-down"></a></li>
+                        </div>
+                        <div class="flex haveSub">
+                            <li><a class="notSp" href="#">Tin tức</a></li>
+                        </div>                           
+                        <div class="flex haveSub"><li><a class="notSp" class="news" href="#">Đăng tin</a></li></div>
+                        <div class="flex haveSub" id="user">
+                            <li><a href="../HTML/signIn_Up.html" class="fa-solid fa-circle-user"></a></li>
+                            <li>
+                                <a href="../HTML/signIn_Up.html">Tài khoản</a>
+                                <ul id="last">
+                                    <li><a href="../HTML/signIn_Up.html">Đăng nhập</a></li>
+                                    <li><a href="../HTML/signIn_Up.html">Đăng kí</a></li>
+                                    <li><a class="notSp" href="#">Góp ý</a></li>
+                                    <li><a class="notSp" href="#">Hỗ trợ</a></li>
+                                    <li><a class="notSp" href="#">Liên hệ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="../image/brg_sell_header.png" alt="">
+            <div class="col40">
+                <p>Bán xe một cách nhanh chóng với giá tốt nhất!</p>
+                <p style="cursor: pointer;"><a href="#">Đặt lịch hẹn <span style="color: darkblue;">MIỄN PHÍ</span> ngay!</a></p>
+            </div>
+        </section>
+        <section>
+            <p style="background-color: #000000; height: 100px;width: 100%;"></p>
+        </section>
+        <section id="baBuoc">
+            <p></p>
+            <h2>Ba bước bán xe chỉ trong 1 <span style="color: #FFD700;">'Click'</span></h2>
+            <div class="col80 flex">
+                <div class="buoc col30">
+                    <div class="flex">
+                        <p><i class="fa-regular fa-calendar"></i></p>
+                        <h4>1. Định giá, đặt lịch kiểm tra xe miễn phí</h4>
+                    </div>
+                    <p>Điền đầy đủ thông tin xe để nhận định giá, sau đó đặt lịch hẹn kiểm tra xe</p>
+                    <span>Step 1</span>
+                </div>
+                <div class="buoc col30">
+                    <div class="flex">
+                        <p><i class="fa-regular fa-envelope"></i></p>
+                        <h4>2. Nhận kết quả tình trạng xe và giá đề xuất</h4>
+                    </div>
+                    <p>Chuyên viên của HONTRI trực tiếp kiểm tra xe và đưa ra mức giá chính xác nhất cho chiếc xe của bạn</p>
+                    <span>Step 2</span>
+                </div>
+                <div class="buoc col30">
+                    <div class="flex">
+                        <p><i class="fa-regular fa-clock"></i></p>
+                        <h4>3. Bán xe, nhận tiền </h4>
+                    </div>
+                    <p>Ngay khi bạn đồng ý bán xe, quá trình làm thủ tục diễn ra nhanh chóng. HONTRI sẽ thanh toán cho bạn trong vòng 1 giờ</p>
+                    <span>Step 3</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex" id="formBan">
+            <div class="col50">
+                <span></span>
+                <p>Định giá miễn phí, thu mua giá cao, nhận tiền trong ngày</p>
+                <span>Chiếc xe của bạn được định giá tự động bằng AI chỉ trong 1 phút.</span>
+                <img width="100%" src="../image/brg_form_sell.png" alt="">
+            </div>
+             <div class="form col40">
+                <h3>Nhập thông tin để HONTRI định giá tự động hoặc bán xe của bạn</h3>
+                <div class="flex">
+                    <div class="col50">
+                        <p>Hãng xe</p>
+                        <select class="cars">
+                            <option>Toyota</option>
+                            <option>Hyundai</option>
+                            <option>VinFast</option>
+                            <option>Kia</option>
+                            <option>Ford</option>
+                            <option>Mazda</option>
+                            <option>Honda</option>
+                            <option>Mitsubishi</option>
+                            <option>Peugeot</option>
+                            <option>Nissan</option>
+                            <option>Mercedes</option>
+                            <option>Volkswagen</option>
+                            <option>Chevrolet</option>
+                            <option>Lexus</option>
+                            <option>BMW</option>
+                            <option>Landrover</option>
+                            <option>Subaru</option>
+                          </select>
+                    </div>
+                    <div class="col50">
+                        <p>Dòng xe</p>
+                        <select class="cars">
+                            <option>Toyota</option>
+                            <option>Hyundai</option>
+                            <option>VinFast</option>
+                            <option>Kia</option>
+                            <option>Ford</option>
+                            <option>Mazda</option>
+                            <option>Honda</option>
+                            <option>Mitsubishi</option>
+                            <option>Peugeot</option>
+                            <option>Nissan</option>
+                            <option>Mercedes</option>
+                            <option>Volkswagen</option>
+                            <option>Chevrolet</option>
+                            <option>Lexus</option>
+                            <option>BMW</option>
+                            <option>Landrover</option>
+                            <option>Subaru</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="col50">
+                        <p>Năm sản xuất</p>
+                        <input type="month">
+                    </div>
+                    <div class="col50">
+                        <p>Phiên bản</p>
+                        <select class="cars">
+                            <option>Serise 1</option>
+                            <option>Serise 2</option>
+                            <option>Serise 3</option>
+                            <option>Serise 4</option>
+                            <option>Serise 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="col50">
+                        <p>Khu vực</p>
+                        <select class="cars">
+                            <option>Hồ Chí Minh</option>
+                            <option>Hà Nội</option>
+                            <option>Đà Nẵng</option>
+                            <option>Hải Phòng</option>
+                            <option>Đồng Nai</option>
+                        </select>
+                    </div>
+                    <div class="col50">
+                        <p>Số km đã đi</p>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="flex notSp">
+                    <button style="cursor: pointer;" class="col40" type="button">Định giá ngay!</button>
+                    <button style="cursor: pointer;" class="col40" type="button">Bán xe</button>
+                </div>
+             </div>
+        </section>
+
+        <section id="nhanxet">
+            <p></p>
+            <h2>Gửi trọn niềm tin vào chúng tôi</h2>
+            <div id="cnt">
+                <div class="cmts">
+                    <div class="col30 cmt">
+                        <img src="../image/batTay_sell.jpg" alt="">
+                        <h4>Hương Thảo</h4>
+                        <p>Tối qua tự định giá trên web, sáng nay nhân viên Otocity tới tận nhà kiểm tra rồi mua đúng giá luôn. Rất nhanh gọn!</p>
+                    </div>
+                    <div class="col30 cmt">
+                        <img src="../image/batTay4.jpg" alt="">
+                        <h4>Trung Thành</h4>
+                        <p>Xe chạy rất êm và tiết kiệm nhiên liệu. Tôi rất hài lòng với quyết định mua xe này! Thiết kế hiện đại, nội thất sang trọng, và cảm giác lái rất tốt. Hoàn toàn xứng đáng với số tiền bỏ ra!</p>
+                    </div>
+                    <div class="col30 cmt">
+                        <img src="../image/batTay7.jpg" alt="">
+                        <h4>Minh Nhật</h4>
+                        <p>Hontri trả cao nhất nên mình bán xe cho bên này. Mình đặt lịch rồi được kiểm tra xe và thanh toán ngay trong ngày, thái độ nhân viên tốt.</p>
+                    </div>
+                    <div class="col30 cmt">
+                        <img src="../image/batTay6.jpg" alt="">
+                        <h4>Thanh Phong</h4>
+                        <p>Xe chạy rất êm và tiết kiệm nhiên liệu. Tôi rất hài lòng với quyết định mua xe này! Thiết kế hiện đại, nội thất sang trọng, và cảm giác lái rất tốt. Hoàn toàn xứng đáng với số tiền bỏ ra!</p>
+                    </div>
+                    <div class="col30 cmt">
+                        <img src="../image/bat_tay2.png" alt="">
+                        <h4>Thu Thủy</h4>
+                        <p>Mình bán xe cho Otocity để không phải tiếp nhiều bên. Giá thì biết trước trên web rồi nên mua bán đỡ đau đầu.</p>
+                    </div>
+                    <div class="col30 cmt">
+                        <img src="../image/bat_tay3.jpg" alt="">
+                        <h4>Hoàng Long</h4>
+                        <p>Tối qua tự định giá trên web, sáng nay nhân viên Otocity tới tận nhà kiểm tra rồi mua đúng giá luôn. Rất nhanh gọn!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btnn Right"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="btnn Left"><i class="fa-solid fa-chevron-left"></i></div>
+        </section>
+    </main>
+
+    <!-- Phần footer  -->
+    <footer>
+        <div class="back_button">
+            <button id="scroll"><i class="fa-solid fa-angle-up"></i></button>
+            <p>Lên trên</p>
+        </div>
+
+        <div class="connect">
+            <div class="content">
+                <p>Kết nối với HONTRI</p>
+                <p>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</p>
+            </div>
+            <div class="linked"><a href="#">Đăng ký và nhận quà tặng</a></div>
+        </div>
+
+        <div class="info">
+            <div class="info1">
+                <div class="title">Các dòng xe</div>
+                <div class="detail">
+                    <p>Xe thuần điện EQ</p>
+                    <p>Sedan</p>
+                    <p>SUV</p>
+                    <p>cabriolet</p>
+                    <p>Xe đa dụng</p>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="title">Mua xe</div>
+                <div class="detail">
+                    <p>Ưu đãi mới nhất</p>
+                    <p>Tìm xe mới</p>
+                    <p>Tìm xe đã qua sử dụng</p>
+                    <p>Bảng giá & Brochure</p>
+                    <p>Cấu hình xe</p>
+                </div>
+            </div>
+            <div class="info3">
+                <div class="title">Tư vấn mua xe</div>
+                <div class="detail">
+                    <p>Yêu cần tư vấn</p>
+                    <p>Đăng ký lái thử</p>
+                    <p>Tìm nhà phân phối gần nhất</p>
+                </div>
+            </div>
+            <div class="info4">
+                <div class="title">Dịch vụ</div>
+                <div class="detail">
+                    <p>Ưu đãi dịch vụ</p>
+                    <p>Đặt hẹn dịch vụ</p>
+                    <p>Hướng dẫn sử dụng dành cho chủ sở hữu xe</p>
+                    <p>Phụ kiện chính hãng</p>
+                </div>
+            </div>
+            <div class="info5">
+                <div class="title">Khám phá HONTRI</div>
+                <div class="detail">
+                    <p>Câu chuyện của chúng tôi</p>
+                    <p>Liện hệ</p>
+                    <p>Quyền riêng tư</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_of_footer">
+                <span>Bản quyền nội dung</span><span>Cài đặt</span><span>Quyền riêng tư và bảo vệ dữ liệu</span><span>Thông tin pháp lý</span>
+        </div>
+    </footer>
+</body>
+</html>

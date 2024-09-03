@@ -1,0 +1,27 @@
+form h1, .cover h1{
+    font-size: 7vw;
+}
+.social-icons{
+    display: none;
+}
+
+.cover{
+    width: 45%;
+    border-radius: 0 20px 20px 0;
+}
+.t2{
+    border-radius: 20px 0 0 20px;
+}
+main section{
+    width: 50%;
+}
+form button, .cover button{
+    margin: 20px 10px;
+    width: 90%;
+}
+.cover p{
+    display: none;
+}
+#switch{
+    display: none;
+}
