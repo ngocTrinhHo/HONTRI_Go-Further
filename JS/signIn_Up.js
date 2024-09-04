@@ -52,4 +52,11 @@ function init() {
     
     window.addEventListener('resize', menuDisplay);
     menuDisplay();
+
+    var listNotSp= document.getElementsByClassName('notSp');
+    for(let i=0; i<listNotSp.length; i++){
+        listNotSp[i].onclick=function(){
+            alert('Tính năng hiện chưa hỗ trợ');
+        }
+    }
 }
