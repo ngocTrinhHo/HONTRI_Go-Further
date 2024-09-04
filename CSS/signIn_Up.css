@@ -19,24 +19,172 @@
     --gray: #DCDCDC;
     --yellow:#050a30;
 }
+/*______________________________header_______________________________ */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col20{
+    width: 20%;
+}
+.col50{
+    width: 50%;
+}
+.col40{
+    width: 40%;
+}
+
+.col90{
+    width: 90%;
+}
+
+.col30{
+    width: 30%;
+}
+
+.col80{
+    width: 80%;
+}
 .col70{
     width: 70%;
 }
-
-body{
-    background: var(--blue);
-    background-repeat: none;
+/* menubar */
+.fa-bars{
+    top: 0px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none !important;
+    color: var(--white);
+}
+/* menu + video */
+div#topMenu{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
 }
 
-main{
-    margin: 4% auto;
+#topMenu>div>ul{
+    list-style-type: none;
+}
+
+#topMenu>div>ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+    font-style: bold;
+}
+
+#topMenu>div>ul div>div{
+    padding: var(--x10);
+    margin: 0 var(--x10);
+}
+
+.logoHeader{
+    width: 70px;
+}
+
+.news{
+    background-color: var(--blue);
+    border-radius: var(--x20) var(--x20);
+    border: 1px solid lightblue;
+    margin-right: var(--x10);
+    padding: 10px var(--x20);
+}
+
+a.news{
+    color: var(--white) !important;
+}
+
+a.news:hover{
+    color: var(--yellow);
+}
+.haveSub>li:first-child{
+    padding: 0 5px;
+}
+
+.fa-circle-user{
+    font-size: 1.5rem;
+}
+
+.haveSub{
     position: relative;
+}
+
+.submenu, #last{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    margin-top: var(--x10);
+    left: 0;
+    width: 250%;
+}
+
+#last{
+    width: 150%;
+    margin-top: 15px;
+    right: 0;
+    left: initial;
+    position: absolute;
+}
+
+.submenu a, #last a{
+    display: block;
+    background-color: var(--white);
+    padding: var(--x20) 40px;
+    color: var(--black) !important;
+}
+
+.submenu>li:first-child a, #last>li:first-child a{
+    border-radius: var(--x20) var(--x20) 0 0;
+    box-shadow: 1px 3px 5px var(--gray);
+}
+
+.submenu>li:last-child a, #last>li:last-child a{
+    border-radius: 0 0 var(--x20) var(--x20);
+    box-shadow: 1px 3px 5px var(--gray);
+}
+
+.submenu li:hover a, #last li:hover a{
+    background-color: var(--gray);
+}
+.submenu::after{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--white) transparent;
+    bottom: 100%;
+    display: block;
+    position: absolute;
+    right: 75%;
+}
+
+#last>li:nth-child(2){
+    border-bottom: 1.5px solid grey;
+}
+
+.haveSub:hover .submenu, .haveSub:hover #last{
+    display: block;
+}
+
+body{
+    background-color: var(--blue);
+}
+main{
+    position: absolute;
     display: flex;
     justify-content: space-around;
     background-color: var(--white);
     padding: 40px;
     border-radius: 20px;
     height: 400px;
+    top:15%;
+    left: 10%;
+    right: 10%;
 }
 main section{
     width: 50%;
@@ -79,6 +227,7 @@ form p:hover, form a:hover{
 .social-icons{
     text-align: center;
     margin: 20px;
+    justify-content: center;
 }
 .social-icons a{
     margin: 5px;
@@ -158,6 +307,7 @@ color: var(--black);
     right: 20px;
     top: 20px;
     position: absolute;
+    top: 15%;
     border: 1px solid transparent;
 }
 #switch>i{
