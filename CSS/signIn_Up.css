@@ -29,10 +29,8 @@ body{
 }
 
 main{
-    height: 500px;
     margin: 4% auto;
     position: relative;
-    top: 40%;
     display: flex;
     justify-content: space-around;
     background-color: var(--white);

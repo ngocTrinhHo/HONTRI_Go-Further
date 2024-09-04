@@ -146,7 +146,7 @@ a.news:hover{
 
 .submenu a, #last a{
     display: block;
-    background-color: var(--gray);
+    background-color: var(--white);
     padding: var(--x20) 40px;
     color: var(--black) !important;
 }

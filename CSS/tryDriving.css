@@ -491,6 +491,8 @@ a.news:hover{
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 #nangLuc h1{
     text-transform: uppercase;
